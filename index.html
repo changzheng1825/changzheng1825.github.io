@@ -93,6 +93,7 @@
                     <a href="/zheng/" class="nav-link action-button">快速上手 →</a>
                 </p>
             </header>
+            <a data-track="点击百度链接" href="http://www.baidu.com">baidu</a>
             <div class="features">
                 <div class="feature"><h2>简洁至上</h2>
                     <p>以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。</p></div>
@@ -125,6 +126,16 @@
     </div>
     <div class="global-ui"></div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("[data-track]").on("click", function() {
+            var label = $(this).data("track");
+            window._hmt && window._hmt.push(['_trackEvent', label, 'click']);
+        });
+    });
+</script>
 <script src="/assets/js/app.8737bd2a.js" defer></script>
 <script src="/assets/js/2.e0186171.js" defer></script>
 <script src="/assets/js/5.e75b2df2.js" defer></script>
