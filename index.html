@@ -22,6 +22,7 @@
 <div style="text-align: center;font-size: 30px;color:red">测试</div>
 <div>
     <a id="link" onclick="_hmt.push(['_trackEvent', 'website', 'click', 'baidu', 1])" href="http://www.baidu.com">百度</a>
+    <a onclick="_hmt.push(['_trackPageview', 'http://www.baidu.com']);" href="http://www.baidu.com">http://www.baidu.com</a>
 
 </div>
 
@@ -29,6 +30,7 @@
 <script>
     document.getElementById("link").addEventListener("click", function() {
         _hmt.push(['_trackEvent', 'website', 'click', 'baidu', 1]);
+
         // ...
     });
 
