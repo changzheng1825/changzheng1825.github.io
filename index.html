@@ -25,7 +25,11 @@
     <a onclick="_hmt.push(['_trackPageview', 'http://www.baidu.com']);" href="http://www.baidu.com">http://www.baidu.com</a>
 
 </div>
-
+<div>
+    备注：页面标签无洞察属性
+    <span class="span7">tackevent</span>
+    <div style="width: 100px;height:20px;margin-top: 200px;margin-left: 200px;"></div>
+</div>
 <script src="https://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
 <script>
     document.getElementById("link").addEventListener("click", function() {
@@ -33,6 +37,18 @@
 
         // ...
     });
+
+    $(".span7").bind("click", function() {
+        $("div").text("点了tackevent");
+        _hmt.push(['_trackEvent', "测试", "click_span7"]);
+    });
+
+    setTimeout(function() {
+        $("ins").each(function() {
+
+            $(this).css("display", "none");
+        })
+    }, 5000);
 
 
 </script>
