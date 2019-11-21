@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>测试</title>
+    <script>
+        var _hmt = _hmt || [];
+        _hmt.push(['_trackPageview', '/ceshi/ceshi2.html']);
+        _hmt.push(['_setAccount', '71701dbcc70abe47b2e872fe03fbbf8b']);
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?71701dbcc70abe47b2e872fe03fbbf8b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+<div style="text-align: center;font-size: 30px;color:red">测试页面</div>
+<div>
+    <a id="ceshi2" onclick="_hmt.push(['_trackPageview', '/ceshi/ceshi2.html']); showLoginDialog();"
+       href="javascript:void(0)">登录_trackPageview</a>
+    <br>
+    <a id="login" onclick="_hmt.push(['_trackPageview', '/virtual/login']); showLoginDialog2();"
+       href="javascript:void(0)">登录2_trackPageview</a>
+    <br>
+    <div id="BDBridgeIconWrap">
+        BDBridgeIconWrap
+    </div>
+    <a onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'literature'])" href="http://www.example.com/literature">文学</a>
+    <br>
+    <a onclick=" _hmt.push(['_setCustomVar', 3, 'customer', 'norma2', 3]);" href="javascript:void(0)">normal2</a>
+    <br>
+    <a onclick="_hmt.push(['_setCustomVar', 3, 'customer', 'vip2', 3]);" href="javascript:void(0)">vip2</a>
+</div>
+
+<script src="https://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    document.getElementById('BDBridgeIconWrap').onmouseup = function() {
+        _hmt.push(['_trackPageview', '/im/qiao']);
+    };
+
+    function showLoginDialog(){
+        alert('登录_trackPageview')
+    }
+    function showLoginDialog2(){
+        alert('登录2_trackPageview')
+    }
+
+
+</script>
+</body>
+</html>
